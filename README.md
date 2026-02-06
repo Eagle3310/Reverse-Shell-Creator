@@ -3,25 +3,23 @@
 
 A simple Bash-based tool that automates the creation of reverse shell payloads using your local system IP and a randomly generated port. This script is designed for CTF practice, lab environments, and authorized penetration testing only.
 
+---
+
 📌 Features
 
 Automatically detects local IPv4 address
 
 Generates random listening ports
 
-Supports multiple reverse shell payloads:
-
-PHP One-liner
-
-Bash Reverse Shell
-
-Python Reverse Shell
+Supports multiple reverse shell payloads: PHP, Bash, Python
 
 URL encoding support (Burp-friendly)
 
 Interactive shell selection menu
 
 Lightweight and fast
+
+---
 
 ⚠️ Disclaimer
 
@@ -30,15 +28,7 @@ Do NOT use this tool against systems you do not own or have permission to test.
 
 🛠 Requirements
 
-Ensure the following tools are installed:
-
-Bash
-
-ip command (iproute2)
-
-Burp encoding helper function (burp_urlencode)
-
-Linux environment
+Ensure the following tools are installed: Bash, ip command (iproute2), Burp encoding helper function (burp_urlencode), Linux environment
 
 📂 Installation
 
