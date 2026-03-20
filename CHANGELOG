@@ -1,0 +1,27 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.1.0] - 2026-03-20
+### Added
+- Netcat reverse shell option for quick and widely compatible shell access
+
+### Removed
+- PHP Classic reverse shell option (unused / not implemented)
+
+### Changed
+- Updated interactive shell selection menu to replace PHP Classic with Netcat
+- Improved usability by focusing on more practical and commonly used payloads
+
+## [1.0.0]
+### Added
+- Initial release of Reverse Shell Creator
+- Automatic detection of local IPv4 address
+- Random port generation (3000–6000)
+- Reverse shell payloads for PHP, Bash, and Python
+- URL-encoded payloads for Burp Suite compatibility
+- Interactive menu for easy payload selection
+- Lightweight, fast, and minimal Bash implementation
